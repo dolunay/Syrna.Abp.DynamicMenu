@@ -60,6 +60,9 @@ jobs:
           rm -f *.Demo.*
           ls
 
+      - name: Prep packages
+        run: dotnet nuget add source --username dolunay --password ${{ secrets.NUGET_PACKAGE_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/dolunay/index.json"
+
       - name: Push package to GitHub packages 
         run: dotnet nuget push ${{ github.workspace }}/nugetPackage/*.nupkg --api-key ${{ secrets.NUGET_PACKAGE_TOKEN }}  --source "github"
 
