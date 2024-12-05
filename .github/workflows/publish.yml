@@ -65,10 +65,10 @@ jobs:
           nupkg-path:  '${{ github.workspace }}/nugetPackages/*.nupkg'
           repo-owner:  'Dolunay'
           gh-user:  'Dolunay'
-          token:  ${{ secrets.GITHUB_TOKEN }}
+          token:  ${{ secrets.NUGET_PACKAGE_TOKEN }}
 
       - name: dotnet nuget push to NuGet
-        run: dotnet nuget push ${{ github.workspace }}/nugetPackages/*.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json --skip-duplicate
+        run: dotnet nuget push ${{ github.workspace }}/nugetPackages/*.nupkg -k ${{secrets.NUGET_PACKAGE_TOKEN}} -s https://api.nuget.org/v3/index.json --skip-duplicate
 
       - name: determine if the tag exists
         uses: mukunku/tag-exists-action@v1.0.0
@@ -76,11 +76,11 @@ jobs:
         with:
           tag: ${{ steps.getVersion.outputs.first_match }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.NUGET_PACKAGE_TOKEN }}
 
       - name: add git tag
         if: ${{ steps.checkTag.outputs.exists == 'false' }}
         uses: tvdias/github-tagger@v0.0.1
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.NUGET_PACKAGE_TOKEN }}
           tag: ${{ steps.getVersion.outputs.first_match }}
