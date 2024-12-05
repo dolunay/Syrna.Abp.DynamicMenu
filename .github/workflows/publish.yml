@@ -64,7 +64,7 @@ jobs:
         run: dotnet nuget add source --username dolunay --password ${{ secrets.NUGET_PACKAGE_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/dolunay/index.json"
 
       - name: Push package to GitHub packages 
-        run: dotnet nuget push ${{ github.workspace }}/nugetPackage/*.nupkg --api-key ${{ secrets.NUGET_PACKAGE_TOKEN }}  --source "github"
+        run: dotnet nuget push ${{ github.workspace }}/nugetPackages/*.nupkg --api-key ${{ secrets.NUGET_PACKAGE_TOKEN }}  --source "github"
 
       - name: dotnet nuget push to NuGet
         run: dotnet nuget push ${{ github.workspace }}/nugetPackages/*.nupkg -k ${{secrets.SYRNA_NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json --skip-duplicate
