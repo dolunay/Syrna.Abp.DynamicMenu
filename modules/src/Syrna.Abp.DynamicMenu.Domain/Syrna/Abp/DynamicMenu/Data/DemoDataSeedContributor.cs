@@ -25,11 +25,11 @@ namespace Syrna.Abp.DynamicMenu.Data
             }
 
             var demoMenu = new MenuItem(null, false, "ShortcutMenu", "Shortcut menu", null, null, null, null, null,
-                200, "fa-compass", null, false, false, DynamicMenuConsts.DefaultLResourceTypeName,
+                200, "fas fa-compass", null, false, false, DynamicMenuConsts.DefaultLResourceTypeName,
                 DynamicMenuConsts.DefaultLResourceTypeAssemblyName, new List<MenuItem>
                 {
                     new( "ShortcutMenu", false, "ChangePassword", "Change password", "~/Account/Manage", null, null, null,
-                        null, null, "fa-compass", null,false, false, DynamicMenuConsts.DefaultLResourceTypeName,
+                        null, null, "fas fa-compass", null,false, false, DynamicMenuConsts.DefaultLResourceTypeName,
                         DynamicMenuConsts.DefaultLResourceTypeAssemblyName, null)
                 });
 

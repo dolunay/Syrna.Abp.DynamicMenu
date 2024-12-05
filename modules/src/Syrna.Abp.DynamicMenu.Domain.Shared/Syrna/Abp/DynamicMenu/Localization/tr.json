@@ -28,7 +28,7 @@
     "NewMenuItem": "Yeni",
     "EditMenuItem": "Düzenle",
     "SubMenuItems": "Alt Menüler",
-    "ShortcutMenu": "Kısayol Menü",
+    "Shortcut menu": "Kısayollar",
     "MenuItemDeletionConfirmationMessage": "{0} menü öğesini silmek istediğinizden emin misiniz??",
     "SuccessfullyDeleted": "Başarıyla silindi",
     "Syrna.Abp.DynamicMenu:NonexistentParentMenuItem": "Varolmayan üst menü öğesi: {Üst Adı}",

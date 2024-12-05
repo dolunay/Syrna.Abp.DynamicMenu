@@ -12,42 +12,43 @@ namespace Syrna.Abp.DynamicMenu.MenuItems
         /// <summary>
         /// Name of the parent menu item.
         /// </summary>
+        [MaxLength(450)]
         public virtual string ParentId { get; protected set; }
-
-        /// <summary>
-        /// It will be a child of the Administration menu item if true.
-        /// Effect only if <see cref="ParentId"/> is null.
-        /// </summary>
-        public virtual bool InAdministration { get; protected set; }
 
         /// <summary>
         /// Display name of the menu item.
         /// </summary>
+        [MaxLength(255)]
         public virtual string DisplayName { get; protected set; }
 
         /// <summary>
         /// The URL to navigate when this menu item is selected.
         /// </summary>
+        [MaxLength(2048)]
         public virtual string Url { get; protected set; }
 
         /// <summary>
         /// The special MVC frontend URL to navigate when this menu item is selected.
         /// </summary>
+        [MaxLength(2048)]
         public virtual string UrlMvc { get; protected set; }
 
         /// <summary>
         /// The special Blazor frontend URL to navigate when this menu item is selected.
         /// </summary>
+        [MaxLength(2048)]
         public virtual string UrlBlazor { get; protected set; }
 
         /// <summary>
         /// The special Angular frontend URL to navigate when this menu item is selected.
         /// </summary>
+        [MaxLength(2048)]
         public virtual string UrlAngular { get; protected set; }
 
         /// <summary>
         /// The required permission to display this menu item.
         /// </summary>
+        [MaxLength(255)]
         public virtual string Permission { get; protected set; }
 
         /// <summary>
@@ -59,12 +60,20 @@ namespace Syrna.Abp.DynamicMenu.MenuItems
         /// <summary>
         /// Icon of the menu item if exists.
         /// </summary>
+        [MaxLength(255)]
         public virtual string Icon { get; protected set; }
 
         /// <summary>
         /// Target of the menu item. Can be null, "_blank", "_self", "_parent", "_top" or a frame name for web applications.
         /// </summary>
+        [MaxLength(10)]
         public virtual string Target { get; protected set; }
+
+        /// <summary>
+        /// It will be a child of the Administration menu item if true.
+        /// Effect only if <see cref="ParentId"/> is null.
+        /// </summary>
+        public virtual bool InAdministration { get; protected set; }
 
         /// <summary>
         /// Can be used to public this menu item.
@@ -76,8 +85,10 @@ namespace Syrna.Abp.DynamicMenu.MenuItems
         /// </summary>
         public virtual bool IsDisabled { get; protected set; }
 
+        [MaxLength(255)]
         public virtual string LResourceTypeName { get; protected set; }
 
+        [MaxLength(255)]
         public virtual string LResourceTypeAssemblyName { get; protected set; }
 
         [ForeignKey(nameof(ParentId))]

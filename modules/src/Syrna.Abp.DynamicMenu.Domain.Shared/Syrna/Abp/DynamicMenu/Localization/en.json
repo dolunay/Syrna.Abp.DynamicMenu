@@ -28,7 +28,7 @@
     "NewMenuItem": "New",
     "EditMenuItem": "Edit",
     "SubMenuItems": "Sub-items",
-    "ShortcutMenu": "Shortcuts Menu",
+    "Shortcut menu": "Shortcuts",
     "MenuItemDeletionConfirmationMessage": "Are you sure to delete the menu item {0}?",
     "SuccessfullyDeleted": "Successfully deleted",
     "Syrna.Abp.DynamicMenu:NonexistentParentMenuItem": "Nonexistent parent menu item: {ParentId}",

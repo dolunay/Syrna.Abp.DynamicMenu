@@ -13,7 +13,7 @@ using Volo.Abp.EntityFrameworkCore;
 namespace Syrna.Abp.DynamicMenu.Demo.SqlServer.Migrations
 {
     [DbContext(typeof(DemoMigrationsDbContext))]
-    [Migration("20241205101434_Initial")]
+    [Migration("20241205183524_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -56,7 +56,8 @@ namespace Syrna.Abp.DynamicMenu.Demo.SqlServer.Migrations
                         .HasColumnName("DeletionTime");
 
                     b.Property<string>("DisplayName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("ExtraProperties")
                         .IsRequired()
@@ -64,7 +65,8 @@ namespace Syrna.Abp.DynamicMenu.Demo.SqlServer.Migrations
                         .HasColumnName("ExtraProperties");
 
                     b.Property<string>("Icon")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<bool>("InAdministration")
                         .HasColumnType("bit");
@@ -82,10 +84,12 @@ namespace Syrna.Abp.DynamicMenu.Demo.SqlServer.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("LResourceTypeAssemblyName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("LResourceTypeName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<DateTime?>("LastModificationTime")
                         .HasColumnType("datetime2")
@@ -99,25 +103,32 @@ namespace Syrna.Abp.DynamicMenu.Demo.SqlServer.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ParentId")
+                        .HasMaxLength(450)
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Permission")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Target")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("Url")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(2048)
+                        .HasColumnType("nvarchar(2048)");
 
                     b.Property<string>("UrlAngular")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(2048)
+                        .HasColumnType("nvarchar(2048)");
 
                     b.Property<string>("UrlBlazor")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(2048)
+                        .HasColumnType("nvarchar(2048)");
 
                     b.Property<string>("UrlMvc")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(2048)
+                        .HasColumnType("nvarchar(2048)");
 
                     b.HasKey("Id");
 

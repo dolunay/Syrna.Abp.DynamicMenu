@@ -54,6 +54,8 @@
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemParentId"] *</FieldLabel>
                                 <TextEdit @bind-Text="@NewEntity.ParentId" Autofocus="true">
@@ -62,6 +64,8 @@
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemDisplayName"] *</FieldLabel>
                                 <TextEdit @bind-Text="@NewEntity.DisplayName" Autofocus="true">
@@ -70,38 +74,48 @@
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemUrl"] *</FieldLabel>
-                                <TextEdit @bind-Text="@NewEntity.Url" Autofocus="true">
+                                <TextEdit @bind-Text="@NewEntity.Url" Autofocus="true" Role="TextRole.Url">
                                     <Feedback>
                                         <ValidationError />
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemUrlMvc"] *</FieldLabel>
-                                <TextEdit @bind-Text="@NewEntity.UrlMvc" Autofocus="true">
+                                <TextEdit @bind-Text="@NewEntity.UrlMvc" Autofocus="true" Role="TextRole.Url">
                                     <Feedback>
                                         <ValidationError />
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemUrlBlazor"] *</FieldLabel>
-                                <TextEdit @bind-Text="@NewEntity.UrlBlazor" Autofocus="true">
+                                <TextEdit @bind-Text="@NewEntity.UrlBlazor" Autofocus="true" Role="TextRole.Url">
                                     <Feedback>
                                         <ValidationError />
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemUrlAngular"] *</FieldLabel>
-                                <TextEdit @bind-Text="@NewEntity.UrlAngular" Autofocus="true">
+                                <TextEdit @bind-Text="@NewEntity.UrlAngular" Autofocus="true" Role="TextRole.Url">
                                     <Feedback>
                                         <ValidationError />
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemPermission"] *</FieldLabel>
                                 <TextEdit @bind-Text="@NewEntity.Permission" Autofocus="true">
@@ -110,6 +124,8 @@
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemOrder"] *</FieldLabel>
                                 <NumericEdit @bind-Value="@NewEntity.Order" Autofocus="true">
@@ -118,6 +134,8 @@
                                     </Feedback>
                                 </NumericEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemIcon"] *</FieldLabel>
                                 <TextEdit @bind-Text="@NewEntity.Icon" Autofocus="true">
@@ -126,6 +144,8 @@
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemTarget"] *</FieldLabel>
                                 <TextEdit @bind-Text="@NewEntity.Target" Autofocus="true">
@@ -134,6 +154,8 @@
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemLResourceTypeName"] *</FieldLabel>
                                 <TextEdit @bind-Text="@NewEntity.LResourceTypeName" Autofocus="true">
@@ -142,6 +164,8 @@
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemLResourceTypeAssemblyName"] *</FieldLabel>
                                 <TextEdit @bind-Text="@NewEntity.LResourceTypeAssemblyName" Autofocus="true">
@@ -189,6 +213,8 @@
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemParentId"] *</FieldLabel>
                                 <TextEdit @bind-Text="@EditingEntity.ParentId" Autofocus="true">
@@ -197,6 +223,8 @@
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemDisplayName"] *</FieldLabel>
                                 <TextEdit @bind-Text="EditingEntity.DisplayName" Autofocus="true">
@@ -205,38 +233,48 @@
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemUrl"] *</FieldLabel>
-                                <TextEdit @bind-Text="@EditingEntity.Url" Autofocus="true">
+                                <TextEdit @bind-Text="@EditingEntity.Url" Autofocus="true" Role="TextRole.Url">
                                     <Feedback>
                                         <ValidationError />
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemUrlMvc"] *</FieldLabel>
-                                <TextEdit @bind-Text="@EditingEntity.UrlMvc" Autofocus="true">
+                                <TextEdit @bind-Text="@EditingEntity.UrlMvc" Autofocus="true" Role="TextRole.Url">
                                     <Feedback>
                                         <ValidationError />
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemUrlBlazor"] *</FieldLabel>
-                                <TextEdit @bind-Text="@EditingEntity.UrlBlazor" Autofocus="true">
+                                <TextEdit @bind-Text="@EditingEntity.UrlBlazor" Autofocus="true" Role="TextRole.Url">
                                     <Feedback>
                                         <ValidationError />
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemUrlAngular"] *</FieldLabel>
-                                <TextEdit @bind-Text="@EditingEntity.UrlAngular" Autofocus="true">
+                                <TextEdit @bind-Text="@EditingEntity.UrlAngular" Autofocus="true" Role="TextRole.Url">
                                     <Feedback>
                                         <ValidationError />
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemPermission"] *</FieldLabel>
                                 <TextEdit @bind-Text="@EditingEntity.Permission" Autofocus="true">
@@ -245,6 +283,8 @@
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemOrder"] *</FieldLabel>
                                 <NumericEdit @bind-Value="@EditingEntity.Order" Autofocus="true">
@@ -253,6 +293,8 @@
                                     </Feedback>
                                 </NumericEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemIcon"] *</FieldLabel>
                                 <TextEdit @bind-Text="@EditingEntity.Icon" Autofocus="true">
@@ -261,6 +303,8 @@
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemTarget"] *</FieldLabel>
                                 <TextEdit @bind-Text="@EditingEntity.Target" Autofocus="true">
@@ -269,6 +313,8 @@
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemLResourceTypeName"] *</FieldLabel>
                                 <TextEdit @bind-Text="@EditingEntity.LResourceTypeName" Autofocus="true">
@@ -277,6 +323,8 @@
                                     </Feedback>
                                 </TextEdit>
                             </Field>
+                        </Validation>
+                        <Validation MessageLocalizer="@LH.Localize">
                             <Field>
                                 <FieldLabel>@L["MenuItemLResourceTypeAssemblyName"] *</FieldLabel>
                                 <TextEdit @bind-Text="@EditingEntity.LResourceTypeAssemblyName" Autofocus="true">
