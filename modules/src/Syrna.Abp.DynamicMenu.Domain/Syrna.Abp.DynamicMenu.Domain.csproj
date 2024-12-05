@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\common.props" />
+	<Import Project="..\..\..\configureawait.props" />
+	<Import Project="..\..\..\packing.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.AutoMapper" />
+		<PackageReference Include="Volo.Abp.Ddd.Domain" />
+
+		<PackageReference Include="Volo.Abp.Emailing" />
+		<PackageReference Include="Volo.Abp.Identity.Domain" />
+		<PackageReference Include="Volo.Abp.PermissionManagement.Domain" />
+		<PackageReference Include="Volo.Abp.PermissionManagement.Domain.Identity" />
+		<PackageReference Include="Volo.Abp.AuditLogging.Domain" />
+		<PackageReference Include="Volo.Abp.TenantManagement.Domain" />
+		<PackageReference Include="Volo.Abp.FeatureManagement.Domain" />
+		<PackageReference Include="Volo.Abp.SettingManagement.Domain" />
+
+		<ProjectReference Include="..\Syrna.Abp.DynamicMenu.Domain.Shared\Syrna.Abp.DynamicMenu.Domain.Shared.csproj" />
+	</ItemGroup>
+
+</Project>

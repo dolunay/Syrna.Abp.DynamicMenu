@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>Syrna.Abp.DynamicMenu</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+	  
+    <ProjectReference Include="..\..\src\Syrna.Abp.DynamicMenu.EntityFrameworkCore\Syrna.Abp.DynamicMenu.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Syrna.Abp.DynamicMenu.TestBase\Syrna.Abp.DynamicMenu.TestBase.csproj" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" />
+  </ItemGroup>
+
+</Project>

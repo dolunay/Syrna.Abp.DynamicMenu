@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\common.props" />
+	<Import Project="..\..\..\configureawait.props" />
+	<Import Project="..\..\..\packing.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<RootNamespace />
+		<GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Ddd.Domain.Shared" />
+		<PackageReference Include="Volo.Abp.Validation" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Syrna\Abp\DynamicMenu\Localization\*.json" />
+		<Content Remove="Syrna\Abp\DynamicMenu\Localization\*.json" />
+	</ItemGroup>
+
+</Project>

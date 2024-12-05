@@ -1,0 +1,8 @@
+<Project>
+	<Import Project="version.props" />
+	<Import Project="main.props" />
+	<Import Project="abp.props" />
+	<PropertyGroup>
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+	</PropertyGroup>
+</Project>

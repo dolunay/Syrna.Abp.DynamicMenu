@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <VoloAbpPackageVersion>9.0.0</VoloAbpPackageVersion>
+    <SyrnaAlphaPackageVersion>9.0.0</SyrnaAlphaPackageVersion>
+    <OpenIddictPackageVersion>5.8.0</OpenIddictPackageVersion>
+    <MicrosoftNetFrameworkVersion>9.0.0.0</MicrosoftNetFrameworkVersion>
+    <MicrosoftExtensionsPackageVersion>9.0.0.0</MicrosoftExtensionsPackageVersion>
+    <MicrosoftAspNetCorePackageVersion>9.0.0.0</MicrosoftAspNetCorePackageVersion>
+    <MicrosoftEntityFrameworkCorePackageVersion>9.0.0.0</MicrosoftEntityFrameworkCorePackageVersion>
+  </PropertyGroup>
+</Project>
