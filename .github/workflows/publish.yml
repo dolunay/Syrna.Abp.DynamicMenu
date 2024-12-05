@@ -60,13 +60,9 @@ jobs:
           rm -f *.Demo.*
           ls
 
-      - name: dotnet nuget push to GitHub
-        uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.1
-        with:
-          nupkg-path:  '${{ github.workspace }}/nugetPackages/*.nupkg'
-          repo-owner:  'Dolunay'
-          gh-user:  'Dolunay'
-          token:  ${{ secrets.NUGET_PACKAGE_TOKEN }}
+      - name: Push package to GitHub packages 
+        if: needs.build.outputs.CommitsSinceVersionSource > 0 #Only release if there has been a commit/version change  
+        run: dotnet nuget push ${{ github.workspace }}/nugetPackage/*.nupkg --api-key ${{ secrets.NUGET_PACKAGE_TOKEN }}  --source "github"
 
       - name: dotnet nuget push to NuGet
         run: dotnet nuget push ${{ github.workspace }}/nugetPackages/*.nupkg -k ${{secrets.SYRNA_NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json --skip-duplicate
