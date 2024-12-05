@@ -63,8 +63,8 @@ jobs:
         uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.1
         with:
           nupkg-path:  '${{ github.workspace }}/nugetPackages/*.nupkg'
-          repo-owner:  'Syrna'
-          gh-user:  'Syrna'
+          repo-owner:  'Dolunay'
+          gh-user:  'Dolunay'
           token:  ${{ secrets.GITHUB_TOKEN }}
 
       - name: dotnet nuget push to NuGet
