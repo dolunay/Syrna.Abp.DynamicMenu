@@ -57,6 +57,7 @@ jobs:
           rm -f *.HttpApi.Client.ConsoleTestApp.*
           rm -f *.Tests.*
           rm -f *.TestBase.*
+          rm -f *.Demo.*
           ls
 
       - name: dotnet nuget push to GitHub
@@ -68,7 +69,7 @@ jobs:
           token:  ${{ secrets.NUGET_PACKAGE_TOKEN }}
 
       - name: dotnet nuget push to NuGet
-        run: dotnet nuget push ${{ github.workspace }}/nugetPackages/*.nupkg -k ${{secrets.NUGET_PACKAGE_TOKEN}} -s https://api.nuget.org/v3/index.json --skip-duplicate
+        run: dotnet nuget push ${{ github.workspace }}/nugetPackages/*.nupkg -k ${{secrets.SYRNA_NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json --skip-duplicate
 
       - name: determine if the tag exists
         uses: mukunku/tag-exists-action@v1.0.0
