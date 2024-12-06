@@ -8,6 +8,8 @@ DynamicMenu module for ABP framework.
 
 An abp module that dynamically creates menu items for ABP UI projects in runtime.
 
+![DynamicMenu](https://github.com/user-attachments/assets/96dd349c-3e29-41f5-8a45-00f6c6cb3ddb)
+
 ## Installation
 
 1. Install the following NuGet packages. ([see how](https://github.com/Dolunay/SyrnaAbpGuide/blob/master/docs/How-To.md#add-nuget-packages))
