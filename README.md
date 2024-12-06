@@ -10,7 +10,7 @@ An abp module that dynamically creates menu items for ABP UI projects in runtime
 
 ## Installation
 
-1. Install the following NuGet packages. ([see how](https://github.com/Syrna/SyrnaAbpGuide/blob/master/docs/How-To.md#add-nuget-packages))
+1. Install the following NuGet packages. ([see how](https://github.com/Dolunay/SyrnaAbpGuide/blob/master/docs/How-To.md#add-nuget-packages))
 
     * Syrna.Abp.DynamicMenu.Application
     * Syrna.Abp.DynamicMenu.Application.Contracts
@@ -24,7 +24,7 @@ An abp module that dynamically creates menu items for ABP UI projects in runtime
     * Syrna.Abp.DynamicMenu.Blazor.Server
     * Syrna.Abp.DynamicMenu.Blazor.WebAssembly
 
-1. Add `DependsOn(typeof(AbpDynamicMenuXxxModule))` attribute to configure the module dependencies. ([see how](https://github.com/Syrna/SyrnaAbpGuide/blob/master/docs/How-To.md#add-module-dependencies))
+1. Add `DependsOn(typeof(AbpDynamicMenuXxxModule))` attribute to configure the module dependencies. ([see how](https://github.com/Dolunay/SyrnaAbpGuide/blob/master/docs/How-To.md#add-module-dependencies))
 
 1. Add `builder.ConfigureAbpDynamicMenu();` to the `OnModelCreating()` method in **MyProjectMigrationsDbContext.cs**.
 
