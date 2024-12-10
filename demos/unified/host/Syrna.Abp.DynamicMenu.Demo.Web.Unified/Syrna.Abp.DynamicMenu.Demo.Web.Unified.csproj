@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<Import Project="..\..\..\..\common.props" />
+	<Import Project="..\..\..\..\configureawait.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<RootNamespace>Syrna.Abp.DynamicMenu.Demo</RootNamespace>
+		<PreserveCompilationReferences>true</PreserveCompilationReferences>
+		<UserSecretsId>Syrna.Abp.DynamicMenu-c2d31439-b723-48e2-b061-5ebd7aeb6010</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Data.SqlClient" />
+		
+		<PackageReference Include="Serilog.AspNetCore" />
+		<PackageReference Include="Serilog.Sinks.Async" />
+		<PackageReference Include="Volo.Abp.EntityFrameworkCore.SqlServer" />
+
+		<PackageReference Include="Volo.Abp.Autofac" />
+		<PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite" />
+		<PackageReference Include="Volo.Abp.AspNetCore.Serilog" />
+		<PackageReference Include="Volo.Abp.Swashbuckle" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\Syrna.Abp.DynamicMenu.Demo.HttpApi\Syrna.Abp.DynamicMenu.Demo.HttpApi.csproj" />
+		<ProjectReference Include="..\..\src\Syrna.Abp.DynamicMenu.Demo.Web\Syrna.Abp.DynamicMenu.Demo.Web.csproj" />
+		<ProjectReference Include="..\..\src\Syrna.Abp.DynamicMenu.Demo.Application\Syrna.Abp.DynamicMenu.Demo.Application.csproj" />
+		<ProjectReference Include="..\..\src\Syrna.Abp.DynamicMenu.Demo.EntityFrameworkCore\Syrna.Abp.DynamicMenu.Demo.EntityFrameworkCore.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="EntityFrameworkCore\**" />
+		<Compile Remove="Logs\**" />
+		<Compile Remove="Migrations\**" />
+		<Content Remove="EntityFrameworkCore\**" />
+		<Content Remove="Logs\**" />
+		<Content Remove="Migrations\**" />
+		<EmbeddedResource Remove="EntityFrameworkCore\**" />
+		<EmbeddedResource Remove="Logs\**" />
+		<EmbeddedResource Remove="Migrations\**" />
+		<None Remove="EntityFrameworkCore\**" />
+		<None Remove="Logs\**" />
+		<None Remove="Migrations\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Pages\**\*.js">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Pages\**\*.css">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="wwwroot" />
+	</ItemGroup>
+
+</Project>

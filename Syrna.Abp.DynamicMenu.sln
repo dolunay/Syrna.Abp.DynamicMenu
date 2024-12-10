@@ -45,7 +45,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Blazo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Blazor.WebAssembly", "modules\src\Syrna.Abp.DynamicMenu.Blazor.WebAssembly\Syrna.Abp.DynamicMenu.Blazor.WebAssembly.csproj", "{F0EE5760-262D-456A-AA7C-E84F484A05F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.EntityFrameworkCore", "demo\src\Syrna.Abp.DynamicMenu.Demo.EntityFrameworkCore\Syrna.Abp.DynamicMenu.Demo.EntityFrameworkCore.csproj", "{9AB6423E-DB65-48F8-B397-1D1F78C4744B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.EntityFrameworkCore", "demos\unified\src\Syrna.Abp.DynamicMenu.Demo.EntityFrameworkCore\Syrna.Abp.DynamicMenu.Demo.EntityFrameworkCore.csproj", "{9AB6423E-DB65-48F8-B397-1D1F78C4744B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{CB3A9584-F4DB-42CB-8714-B1942A371A8C}"
 EndProject
@@ -53,31 +53,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{44D51818-F14
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{245B4628-ECE8-4668-8A00-67882E00508D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Application", "demo\src\Syrna.Abp.DynamicMenu.Demo.Application\Syrna.Abp.DynamicMenu.Demo.Application.csproj", "{FE3D2FBC-B85B-4A8D-958B-0B16DD4E1F22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Application", "demos\unified\src\Syrna.Abp.DynamicMenu.Demo.Application\Syrna.Abp.DynamicMenu.Demo.Application.csproj", "{FE3D2FBC-B85B-4A8D-958B-0B16DD4E1F22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Application.Contracts", "demo\src\Syrna.Abp.DynamicMenu.Demo.Application.Contracts\Syrna.Abp.DynamicMenu.Demo.Application.Contracts.csproj", "{F50E3828-7D11-4B5D-9777-0B188669F010}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Application.Contracts", "demos\unified\src\Syrna.Abp.DynamicMenu.Demo.Application.Contracts\Syrna.Abp.DynamicMenu.Demo.Application.Contracts.csproj", "{F50E3828-7D11-4B5D-9777-0B188669F010}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Blazor", "demo\src\Syrna.Abp.DynamicMenu.Demo.Blazor\Syrna.Abp.DynamicMenu.Demo.Blazor.csproj", "{EA6587FF-32E5-4DB5-89A3-53D3091B6C8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Blazor", "demos\unified\src\Syrna.Abp.DynamicMenu.Demo.Blazor\Syrna.Abp.DynamicMenu.Demo.Blazor.csproj", "{EA6587FF-32E5-4DB5-89A3-53D3091B6C8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Blazor.Server", "demo\src\Syrna.Abp.DynamicMenu.Demo.Blazor.Server\Syrna.Abp.DynamicMenu.Demo.Blazor.Server.csproj", "{1982FC28-660A-4581-88D1-7856BE91ADAB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Blazor.Server", "demos\unified\src\Syrna.Abp.DynamicMenu.Demo.Blazor.Server\Syrna.Abp.DynamicMenu.Demo.Blazor.Server.csproj", "{1982FC28-660A-4581-88D1-7856BE91ADAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Blazor.WebAssembly", "demo\src\Syrna.Abp.DynamicMenu.Demo.Blazor.WebAssembly\Syrna.Abp.DynamicMenu.Demo.Blazor.WebAssembly.csproj", "{00D062C4-150F-4FB2-8E63-40B8966DA856}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Blazor.WebAssembly", "demos\unified\src\Syrna.Abp.DynamicMenu.Demo.Blazor.WebAssembly\Syrna.Abp.DynamicMenu.Demo.Blazor.WebAssembly.csproj", "{00D062C4-150F-4FB2-8E63-40B8966DA856}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.DbMigrator", "demo\src\Syrna.Abp.DynamicMenu.Demo.DbMigrator\Syrna.Abp.DynamicMenu.Demo.DbMigrator.csproj", "{9ED437FC-4931-4339-BC05-7C8E5259D791}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.DbMigrator", "demos\unified\src\Syrna.Abp.DynamicMenu.Demo.DbMigrator\Syrna.Abp.DynamicMenu.Demo.DbMigrator.csproj", "{9ED437FC-4931-4339-BC05-7C8E5259D791}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Domain", "demo\src\Syrna.Abp.DynamicMenu.Demo.Domain\Syrna.Abp.DynamicMenu.Demo.Domain.csproj", "{4B1BD3F7-1B1B-4C75-8D92-46B1B28D49F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Domain", "demos\unified\src\Syrna.Abp.DynamicMenu.Demo.Domain\Syrna.Abp.DynamicMenu.Demo.Domain.csproj", "{4B1BD3F7-1B1B-4C75-8D92-46B1B28D49F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Domain.Shared", "demo\src\Syrna.Abp.DynamicMenu.Demo.Domain.Shared\Syrna.Abp.DynamicMenu.Demo.Domain.Shared.csproj", "{FD3A93AA-29F3-48DC-B9D9-77927CF1A0E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Domain.Shared", "demos\unified\src\Syrna.Abp.DynamicMenu.Demo.Domain.Shared\Syrna.Abp.DynamicMenu.Demo.Domain.Shared.csproj", "{FD3A93AA-29F3-48DC-B9D9-77927CF1A0E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.HttpApi", "demo\src\Syrna.Abp.DynamicMenu.Demo.HttpApi\Syrna.Abp.DynamicMenu.Demo.HttpApi.csproj", "{32AFCC0C-4A79-4AD8-9EFA-BDD63DE66CEA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.HttpApi", "demos\unified\src\Syrna.Abp.DynamicMenu.Demo.HttpApi\Syrna.Abp.DynamicMenu.Demo.HttpApi.csproj", "{32AFCC0C-4A79-4AD8-9EFA-BDD63DE66CEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.HttpApi.Client", "demo\src\Syrna.Abp.DynamicMenu.Demo.HttpApi.Client\Syrna.Abp.DynamicMenu.Demo.HttpApi.Client.csproj", "{F05B6542-778B-4B29-BB52-4F471F8920EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.HttpApi.Client", "demos\unified\src\Syrna.Abp.DynamicMenu.Demo.HttpApi.Client\Syrna.Abp.DynamicMenu.Demo.HttpApi.Client.csproj", "{F05B6542-778B-4B29-BB52-4F471F8920EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.SqlServer.EntityFrameworkCore", "demo\src\Syrna.Abp.DynamicMenu.Demo.SqlServer.EntityFrameworkCore\Syrna.Abp.DynamicMenu.Demo.SqlServer.EntityFrameworkCore.csproj", "{4FD45D2F-5E05-4D8A-95CC-A1607A4213C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.SqlServer.EntityFrameworkCore", "demos\unified\src\Syrna.Abp.DynamicMenu.Demo.SqlServer.EntityFrameworkCore\Syrna.Abp.DynamicMenu.Demo.SqlServer.EntityFrameworkCore.csproj", "{4FD45D2F-5E05-4D8A-95CC-A1607A4213C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Blazor.Server.Host", "demo\host\Syrna.Abp.DynamicMenu.Demo.Blazor.Server.Host\Syrna.Abp.DynamicMenu.Demo.Blazor.Server.Host.csproj", "{0C9029BB-2061-4F39-B8F6-C4463ADDB2B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Blazor.Server.Host", "demos\unified\host\Syrna.Abp.DynamicMenu.Demo.Blazor.Server.Host\Syrna.Abp.DynamicMenu.Demo.Blazor.Server.Host.csproj", "{0C9029BB-2061-4F39-B8F6-C4463ADDB2B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Web.Unified", "demo\host\Syrna.Abp.DynamicMenu.Demo.Web.Unified\Syrna.Abp.DynamicMenu.Demo.Web.Unified.csproj", "{284B29D0-FD95-40D3-8878-65B3EF39DE2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Web.Unified", "demos\unified\host\Syrna.Abp.DynamicMenu.Demo.Web.Unified\Syrna.Abp.DynamicMenu.Demo.Web.Unified.csproj", "{284B29D0-FD95-40D3-8878-65B3EF39DE2A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Solution Items", ".Solution Items", "{699F164A-93BE-4F6C-BFD9-2C9B8EBFAE34}"
 	ProjectSection(SolutionItems) = preProject
@@ -101,7 +101,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Solution Items", ".Solutio
 		Version.props = Version.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Web", "demo\src\Syrna.Abp.DynamicMenu.Demo.Web\Syrna.Abp.DynamicMenu.Demo.Web.csproj", "{D8625577-898B-4A1E-8903-D2B0C574C42C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syrna.Abp.DynamicMenu.Demo.Web", "demos\unified\src\Syrna.Abp.DynamicMenu.Demo.Web\Syrna.Abp.DynamicMenu.Demo.Web.csproj", "{D8625577-898B-4A1E-8903-D2B0C574C42C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

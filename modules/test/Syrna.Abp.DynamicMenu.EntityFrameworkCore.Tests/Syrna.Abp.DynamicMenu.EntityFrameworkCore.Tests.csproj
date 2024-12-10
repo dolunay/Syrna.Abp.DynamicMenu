@@ -8,7 +8,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
-    <ProjectReference Include="..\..\..\demo\src\Syrna.Abp.DynamicMenu.Demo.SqlServer.EntityFrameworkCore\Syrna.Abp.DynamicMenu.Demo.SqlServer.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\demos\unified\src\Syrna.Abp.DynamicMenu.Demo.SqlServer.EntityFrameworkCore\Syrna.Abp.DynamicMenu.Demo.SqlServer.EntityFrameworkCore.csproj" />
 	  
     <ProjectReference Include="..\Syrna.Abp.DynamicMenu.TestBase\Syrna.Abp.DynamicMenu.TestBase.csproj" />
     <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" />
